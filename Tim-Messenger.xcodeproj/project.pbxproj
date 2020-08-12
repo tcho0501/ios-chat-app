@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F8EBCED24E424FC005C3059 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8EBCEC24E424FC005C3059 /* AppDelegate.swift */; };
+		4F8EBCEF24E424FC005C3059 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8EBCEE24E424FC005C3059 /* SceneDelegate.swift */; };
+		4F8EBCF124E424FC005C3059 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8EBCF024E424FC005C3059 /* ViewController.swift */; };
+		4F8EBCF424E424FC005C3059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F8EBCF224E424FC005C3059 /* Main.storyboard */; };
+		4F8EBCF624E42503005C3059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F8EBCF524E42503005C3059 /* Assets.xcassets */; };
+		4F8EBCF924E42503005C3059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F8EBCF724E42503005C3059 /* LaunchScreen.storyboard */; };
+		4F8EBD0424E42504005C3059 /* Tim_MessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8EBD0324E42504005C3059 /* Tim_MessengerTests.swift */; };
+		4F8EBD0F24E42504005C3059 /* Tim_MessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8EBD0E24E42504005C3059 /* Tim_MessengerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F8EBD0024E42504005C3059 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F8EBCE124E424FC005C3059 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F8EBCE824E424FC005C3059;
+			remoteInfo = "Tim-Messenger";
+		};
+		4F8EBD0B24E42504005C3059 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F8EBCE124E424FC005C3059 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F8EBCE824E424FC005C3059;
+			remoteInfo = "Tim-Messenger";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F8EBCE924E424FC005C3059 /* Tim-Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tim-Messenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F8EBCEC24E424FC005C3059 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4F8EBCEE24E424FC005C3059 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4F8EBCF024E424FC005C3059 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F8EBCF324E424FC005C3059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4F8EBCF524E42503005C3059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F8EBCF824E42503005C3059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4F8EBCFA24E42503005C3059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F8EBCFF24E42504005C3059 /* Tim-MessengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tim-MessengerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F8EBD0324E42504005C3059 /* Tim_MessengerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tim_MessengerTests.swift; sourceTree = "<group>"; };
+		4F8EBD0524E42504005C3059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F8EBD0A24E42504005C3059 /* Tim-MessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tim-MessengerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F8EBD0E24E42504005C3059 /* Tim_MessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tim_MessengerUITests.swift; sourceTree = "<group>"; };
+		4F8EBD1024E42504005C3059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F8EBCE624E424FC005C3059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F8EBCFC24E42504005C3059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F8EBD0724E42504005C3059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F8EBCE024E424FC005C3059 = {
+			isa = PBXGroup;
+			children = (
+				4F8EBCEB24E424FC005C3059 /* Tim-Messenger */,
+				4F8EBD0224E42504005C3059 /* Tim-MessengerTests */,
+				4F8EBD0D24E42504005C3059 /* Tim-MessengerUITests */,
+				4F8EBCEA24E424FC005C3059 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F8EBCEA24E424FC005C3059 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F8EBCE924E424FC005C3059 /* Tim-Messenger.app */,
+				4F8EBCFF24E42504005C3059 /* Tim-MessengerTests.xctest */,
+				4F8EBD0A24E42504005C3059 /* Tim-MessengerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F8EBCEB24E424FC005C3059 /* Tim-Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				4F8EBCEC24E424FC005C3059 /* AppDelegate.swift */,
+				4F8EBCEE24E424FC005C3059 /* SceneDelegate.swift */,
+				4F8EBCF024E424FC005C3059 /* ViewController.swift */,
+				4F8EBCF224E424FC005C3059 /* Main.storyboard */,
+				4F8EBCF524E42503005C3059 /* Assets.xcassets */,
+				4F8EBCF724E42503005C3059 /* LaunchScreen.storyboard */,
+				4F8EBCFA24E42503005C3059 /* Info.plist */,
+			);
+			path = "Tim-Messenger";
+			sourceTree = "<group>";
+		};
+		4F8EBD0224E42504005C3059 /* Tim-MessengerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F8EBD0324E42504005C3059 /* Tim_MessengerTests.swift */,
+				4F8EBD0524E42504005C3059 /* Info.plist */,
+			);
+			path = "Tim-MessengerTests";
+			sourceTree = "<group>";
+		};
+		4F8EBD0D24E42504005C3059 /* Tim-MessengerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4F8EBD0E24E42504005C3059 /* Tim_MessengerUITests.swift */,
+				4F8EBD1024E42504005C3059 /* Info.plist */,
+			);
+			path = "Tim-MessengerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F8EBCE824E424FC005C3059 /* Tim-Messenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F8EBD1324E42504005C3059 /* Build configuration list for PBXNativeTarget "Tim-Messenger" */;
+			buildPhases = (
+				4F8EBCE524E424FC005C3059 /* Sources */,
+				4F8EBCE624E424FC005C3059 /* Frameworks */,
+				4F8EBCE724E424FC005C3059 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tim-Messenger";
+			productName = "Tim-Messenger";
+			productReference = 4F8EBCE924E424FC005C3059 /* Tim-Messenger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F8EBCFE24E42504005C3059 /* Tim-MessengerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F8EBD1624E42504005C3059 /* Build configuration list for PBXNativeTarget "Tim-MessengerTests" */;
+			buildPhases = (
+				4F8EBCFB24E42504005C3059 /* Sources */,
+				4F8EBCFC24E42504005C3059 /* Frameworks */,
+				4F8EBCFD24E42504005C3059 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F8EBD0124E42504005C3059 /* PBXTargetDependency */,
+			);
+			name = "Tim-MessengerTests";
+			productName = "Tim-MessengerTests";
+			productReference = 4F8EBCFF24E42504005C3059 /* Tim-MessengerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4F8EBD0924E42504005C3059 /* Tim-MessengerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F8EBD1924E42504005C3059 /* Build configuration list for PBXNativeTarget "Tim-MessengerUITests" */;
+			buildPhases = (
+				4F8EBD0624E42504005C3059 /* Sources */,
+				4F8EBD0724E42504005C3059 /* Frameworks */,
+				4F8EBD0824E42504005C3059 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F8EBD0C24E42504005C3059 /* PBXTargetDependency */,
+			);
+			name = "Tim-MessengerUITests";
+			productName = "Tim-MessengerUITests";
+			productReference = 4F8EBD0A24E42504005C3059 /* Tim-MessengerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F8EBCE124E424FC005C3059 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Tim Cho";
+				TargetAttributes = {
+					4F8EBCE824E424FC005C3059 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					4F8EBCFE24E42504005C3059 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 4F8EBCE824E424FC005C3059;
+					};
+					4F8EBD0924E42504005C3059 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 4F8EBCE824E424FC005C3059;
+					};
+				};
+			};
+			buildConfigurationList = 4F8EBCE424E424FC005C3059 /* Build configuration list for PBXProject "Tim-Messenger" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F8EBCE024E424FC005C3059;
+			productRefGroup = 4F8EBCEA24E424FC005C3059 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F8EBCE824E424FC005C3059 /* Tim-Messenger */,
+				4F8EBCFE24E42504005C3059 /* Tim-MessengerTests */,
+				4F8EBD0924E42504005C3059 /* Tim-MessengerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F8EBCE724E424FC005C3059 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8EBCF924E42503005C3059 /* LaunchScreen.storyboard in Resources */,
+				4F8EBCF624E42503005C3059 /* Assets.xcassets in Resources */,
+				4F8EBCF424E424FC005C3059 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F8EBCFD24E42504005C3059 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F8EBD0824E42504005C3059 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F8EBCE524E424FC005C3059 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8EBCF124E424FC005C3059 /* ViewController.swift in Sources */,
+				4F8EBCED24E424FC005C3059 /* AppDelegate.swift in Sources */,
+				4F8EBCEF24E424FC005C3059 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F8EBCFB24E42504005C3059 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8EBD0424E42504005C3059 /* Tim_MessengerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F8EBD0624E42504005C3059 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8EBD0F24E42504005C3059 /* Tim_MessengerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F8EBD0124E42504005C3059 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F8EBCE824E424FC005C3059 /* Tim-Messenger */;
+			targetProxy = 4F8EBD0024E42504005C3059 /* PBXContainerItemProxy */;
+		};
+		4F8EBD0C24E42504005C3059 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F8EBCE824E424FC005C3059 /* Tim-Messenger */;
+			targetProxy = 4F8EBD0B24E42504005C3059 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4F8EBCF224E424FC005C3059 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F8EBCF324E424FC005C3059 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4F8EBCF724E42503005C3059 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F8EBCF824E42503005C3059 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F8EBD1124E42504005C3059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F8EBD1224E42504005C3059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F8EBD1424E42504005C3059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tim-Messenger/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "timcho.Tim-Messenger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F8EBD1524E42504005C3059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tim-Messenger/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "timcho.Tim-Messenger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F8EBD1724E42504005C3059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tim-MessengerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "timcho.Tim-MessengerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tim-Messenger.app/Tim-Messenger";
+			};
+			name = Debug;
+		};
+		4F8EBD1824E42504005C3059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tim-MessengerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "timcho.Tim-MessengerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tim-Messenger.app/Tim-Messenger";
+			};
+			name = Release;
+		};
+		4F8EBD1A24E42504005C3059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tim-MessengerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "timcho.Tim-MessengerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tim-Messenger";
+			};
+			name = Debug;
+		};
+		4F8EBD1B24E42504005C3059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tim-MessengerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "timcho.Tim-MessengerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tim-Messenger";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F8EBCE424E424FC005C3059 /* Build configuration list for PBXProject "Tim-Messenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F8EBD1124E42504005C3059 /* Debug */,
+				4F8EBD1224E42504005C3059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F8EBD1324E42504005C3059 /* Build configuration list for PBXNativeTarget "Tim-Messenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F8EBD1424E42504005C3059 /* Debug */,
+				4F8EBD1524E42504005C3059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F8EBD1624E42504005C3059 /* Build configuration list for PBXNativeTarget "Tim-MessengerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F8EBD1724E42504005C3059 /* Debug */,
+				4F8EBD1824E42504005C3059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F8EBD1924E42504005C3059 /* Build configuration list for PBXNativeTarget "Tim-MessengerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F8EBD1A24E42504005C3059 /* Debug */,
+				4F8EBD1B24E42504005C3059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F8EBCE124E424FC005C3059 /* Project object */;
+}
