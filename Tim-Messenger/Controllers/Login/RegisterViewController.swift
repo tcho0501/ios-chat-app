@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  RegisterViewController.swift
 //  Tim-Messenger
 //
 //  Created by Tim Cho on 12/8/2020.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = .link
         // Do any additional setup after loading the view.
     }
     
