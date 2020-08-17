@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F7643C124E963BC001EF339 /* AddProfilePicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7643C024E963BC001EF339 /* AddProfilePicViewController.swift */; };
 		4F8EBCED24E424FC005C3059 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8EBCEC24E424FC005C3059 /* AppDelegate.swift */; };
 		4F8EBCEF24E424FC005C3059 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8EBCEE24E424FC005C3059 /* SceneDelegate.swift */; };
 		4F8EBCF124E424FC005C3059 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8EBCF024E424FC005C3059 /* ConversationsViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F7643C024E963BC001EF339 /* AddProfilePicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfilePicViewController.swift; sourceTree = "<group>"; };
 		4F8EBCE924E424FC005C3059 /* Tim-Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tim-Messenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8EBCEC24E424FC005C3059 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F8EBCEE24E424FC005C3059 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			children = (
 				4F8EBD2524E42AE7005C3059 /* LoginViewController.swift */,
 				4F8EBD2724E42AF4005C3059 /* RegisterViewController.swift */,
+				4F7643C024E963BC001EF339 /* AddProfilePicViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				4F8EBD2624E42AE7005C3059 /* LoginViewController.swift in Sources */,
 				4F8EBD2824E42AF4005C3059 /* RegisterViewController.swift in Sources */,
 				4F8EBD2E24E42B3A005C3059 /* NewConversationViewController.swift in Sources */,
+				4F7643C124E963BC001EF339 /* AddProfilePicViewController.swift in Sources */,
 				4F8EBCF124E424FC005C3059 /* ConversationsViewController.swift in Sources */,
 				4F8EBD2C24E42B1F005C3059 /* VideoPlayerViewController.swift in Sources */,
 				4F8EBD3324E7D4FD005C3059 /* Extensions.swift in Sources */,

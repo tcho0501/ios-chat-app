@@ -24,6 +24,7 @@ class ConversationsViewController: UIViewController {
         if !isLoggedIn {
             let vc = LoginViewController()
             let nav = UINavigationController(rootViewController: vc)
+            nav.setNavigationBarHidden(true, animated: false)
             nav.modalPresentationStyle = .fullScreen
             present(nav, animated: false)
         }
