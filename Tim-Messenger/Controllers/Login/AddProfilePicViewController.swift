@@ -85,7 +85,7 @@ class AddProfilePicViewController: UIViewController {
 
 }
 
-extension AddProfilePicViewController : UIImagePickerControllerDelegate {
+extension AddProfilePicViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func presentPhotoActionActionSheet() {
         let actionSheet = UIAlertController(title: "Profile Picture",
@@ -109,6 +109,9 @@ extension AddProfilePicViewController : UIImagePickerControllerDelegate {
         print("presenting camera")
         let vc = UIImagePickerController()
         vc.sourceType = .camera
+        vc.delegate = self
+        vc.allowsEditing = true
+        present(vc, animated: true)
         
     }
     
@@ -116,14 +119,25 @@ extension AddProfilePicViewController : UIImagePickerControllerDelegate {
         print("presenting image library")
         let vc = UIImagePickerController()
         vc.sourceType = .photoLibrary
+        vc.allowsEditing = true
+        vc.delegate = self
+        present(vc, animated: true)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        // do something
-        print("hello")
+        picker.dismiss(animated: true, completion: nil)
+        //  print(info)
+        let selectedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
+        self.addProfilePicButton.setBackgroundImage(selectedImage, for: .normal)
+        // setting border around new image
+        self.addProfilePicButton.layer.cornerRadius = 90
+        self.addProfilePicButton.clipsToBounds = true
+        self.addProfilePicButton.bounds = self.addProfilePicButton.bounds.insetBy(dx: -12, dy: -12)
+        self.addProfilePicButton.layer.borderWidth = 10
+        self.addProfilePicButton.layer.borderColor = UIColor(red: 0.635, green: 0.439, blue: 0.208, alpha: 1).cgColor
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        // do something
+        picker.dismiss(animated: true, completion: nil)
     }
 }
