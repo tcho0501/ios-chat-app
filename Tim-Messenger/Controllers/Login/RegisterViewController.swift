@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class RegisterViewController: UIViewController {
 
@@ -226,11 +227,29 @@ class RegisterViewController: UIViewController {
             if (password != reTypePassword) {
                 alertUserRegisterErrorPasswordsMismatch()
             }
-            // firebase login
-            
-            // valid account creation, push controller to add profile pic
-            let vc = AddProfilePicViewController()
-            navigationController?.pushViewController(vc, animated: true)
+            // Firebase login
+            FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { authResult, error in
+                guard let result = authResult, error == nil else {
+                    print("Error creating user")
+//                    print(error.debugDescription)
+//                    print(error.localizedDescription)
+                    
+                    // alert user of error creating account here
+                    let alert = UIAlertController(title: "Error Creating User",
+                                                  message: error?.localizedDescription,
+                                                  preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Got it",
+                                                  style: .cancel,
+                                                  handler: nil))
+                    self.present(alert, animated: true)
+                    return
+                }
+                let user = result.user
+                print("Created User: \(user)")
+                // valid account creation, push controller to add profile pic
+                let vc = AddProfilePicViewController()
+                self.navigationController?.pushViewController(vc, animated: true)
+            })
         }
         
         func alertUserRegisterErrorEmptyFields() {
