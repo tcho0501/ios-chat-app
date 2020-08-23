@@ -231,17 +231,9 @@ class RegisterViewController: UIViewController {
             FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { authResult, error in
                 guard let result = authResult, error == nil else {
                     print("Error creating user")
-//                    print(error.debugDescription)
-//                    print(error.localizedDescription)
-                    
+                    print(error!.localizedDescription)
                     // alert user of error creating account here
-                    let alert = UIAlertController(title: "Error Creating User",
-                                                  message: error?.localizedDescription,
-                                                  preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Got it",
-                                                  style: .cancel,
-                                                  handler: nil))
-                    self.present(alert, animated: true)
+                    self.alertUserRegisterFirebaseError(localizedDescription: error!.localizedDescription)
                     return
                 }
                 let user = result.user
@@ -251,7 +243,15 @@ class RegisterViewController: UIViewController {
                 self.navigationController?.pushViewController(vc, animated: true)
             })
         }
-        
+    func alertUserRegisterFirebaseError(localizedDescription : String) {
+        let alert = UIAlertController(title: "Error Creating User",
+                                      message: localizedDescription,
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Got it",
+                                      style: .cancel,
+                                      handler: nil))
+        self.present(alert, animated: true)
+    }
         func alertUserRegisterErrorEmptyFields() {
             let alert = UIAlertController(title: "Error Signing Up",
                                           message: "Please make sure input fields are not empty",

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
@@ -142,15 +143,34 @@ class LoginViewController: UIViewController {
                 alertUserLoginError()
                 return
         }
-        // firebase login
+        // Firebase login
+        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: {authResult, error in
+            guard let result = authResult, error == nil else {
+                print(error!.localizedDescription)
+                self.alertUserLoginFirebaseError(localizedDescription: error!.localizedDescription)
+                return
+            }
+            let user = result.user
+            print("Logged In user \(user)")
+        })
         
+    }
+    
+    func alertUserLoginFirebaseError(localizedDescription : String) {
+        let alert = UIAlertController(title: "Error Logging in",
+                                      message: localizedDescription,
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Got it",
+                                      style: .cancel,
+                                      handler: nil))
+        present(alert, animated: true)
     }
     
     func alertUserLoginError() {
         let alert = UIAlertController(title: "Error Logging in",
                                       message: "Please ensure credentials are correct",
                                       preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Dismiss",
+        alert.addAction(UIAlertAction(title: "Got it",
                                       style: .cancel,
                                       handler: nil))
         present(alert, animated: true)
