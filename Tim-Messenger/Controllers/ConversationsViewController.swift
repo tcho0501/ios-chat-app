@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import FirebaseAuth
 class ConversationsViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -15,13 +15,16 @@ class ConversationsViewController: UIViewController {
         view.backgroundColor = .red
         
         // Do any additional setup after loading the view.
+        DatabaseManager.shared.testDB()
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        let isLoggedIn = UserDefaults.standard.bool(forKey: "logged_in")
-        
-        if !isLoggedIn {
+        validateAuth()
+    }
+    
+    private func validateAuth() {
+//        print(FirebaseAuth.Auth.auth().currentUser?.email ?? "")
+        if FirebaseAuth.Auth.auth().currentUser == nil {
             let vc = LoginViewController()
             let nav = UINavigationController(rootViewController: vc)
             nav.setNavigationBarHidden(true, animated: false)

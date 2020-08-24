@@ -11,6 +11,7 @@
 		2008BA7ED1D582FCA2C27FC0 /* Pods_Tim_MessengerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C245BAFB11931A7EB35301 /* Pods_Tim_MessengerTests.framework */; };
 		4F7643C124E963BC001EF339 /* AddProfilePicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7643C024E963BC001EF339 /* AddProfilePicViewController.swift */; };
 		4F7643C324F22DF7001EF339 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F7643C224F22DF7001EF339 /* GoogleService-Info.plist */; };
+		4F7643C524F3D214001EF339 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7643C424F3D213001EF339 /* DatabaseManager.swift */; };
 		4F8EBCED24E424FC005C3059 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8EBCEC24E424FC005C3059 /* AppDelegate.swift */; };
 		4F8EBCEF24E424FC005C3059 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8EBCEE24E424FC005C3059 /* SceneDelegate.swift */; };
 		4F8EBCF124E424FC005C3059 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8EBCF024E424FC005C3059 /* ConversationsViewController.swift */; };
@@ -52,6 +53,7 @@
 		450401137BB1B55C2D02D14A /* Pods-Tim-Messenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tim-Messenger.debug.xcconfig"; path = "Target Support Files/Pods-Tim-Messenger/Pods-Tim-Messenger.debug.xcconfig"; sourceTree = "<group>"; };
 		4F7643C024E963BC001EF339 /* AddProfilePicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfilePicViewController.swift; sourceTree = "<group>"; };
 		4F7643C224F22DF7001EF339 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F7643C424F3D213001EF339 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		4F8EBCE924E424FC005C3059 /* Tim-Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tim-Messenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8EBCEC24E424FC005C3059 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F8EBCEE24E424FC005C3059 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				4F8EBCEC24E424FC005C3059 /* AppDelegate.swift */,
 				4F8EBCEE24E424FC005C3059 /* SceneDelegate.swift */,
 				4F8EBD3224E7D4FD005C3059 /* Extensions.swift */,
+				4F7643C424F3D213001EF339 /* DatabaseManager.swift */,
 			);
 			name = Resources;
 			path = "New Group";
@@ -496,6 +499,7 @@
 				4F8EBD2C24E42B1F005C3059 /* VideoPlayerViewController.swift in Sources */,
 				4F8EBD3324E7D4FD005C3059 /* Extensions.swift in Sources */,
 				4F8EBCED24E424FC005C3059 /* AppDelegate.swift in Sources */,
+				4F7643C524F3D214001EF339 /* DatabaseManager.swift in Sources */,
 				4F8EBD3024E42B55005C3059 /* ProfileViewController.swift in Sources */,
 				4F8EBCEF24E424FC005C3059 /* SceneDelegate.swift in Sources */,
 				4F8EBD2A24E42B14005C3059 /* PhotoViewerViewController.swift in Sources */,
